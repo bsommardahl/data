@@ -1,0 +1,127 @@
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
+	<script src="../lib/p5.speech.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="js/marquee3k.min.js"></script>
+
+	<script src="js/sketch.js"></script>
+
+	
+	<style>
+
+	@font-face {
+	  font-family: 'Favorit-Regular';
+	  src: url('assets/fonts/Favorit-Regular.eot') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'Favorit-Regular';
+	  src:  url('assets/fonts/Favorit-Regular.ttf') format('woff'), url('assets/fonts/Favorit-Regular.ttf')  format('truetype'), url('assets/fonts/Favorit-Regular.svg#Favorit-Regular') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	
+	body {
+		overflow: hidden;
+		font-family: 'Favorit-Regular';
+		text-transform: uppercase;
+		font-size: 110px;
+		margin: 0;
+    	padding: 0;
+	}
+
+	.absolute {
+		position: absolute !important;
+	}
+
+	.top {
+		top: 0px;
+	}
+
+	.bottom {
+	    bottom: 0px;
+	    z-index: 9;
+	}
+
+	.left {
+	    left: 0px;
+	}		
+
+	.right {
+	    right: 0px;
+	}
+
+	.left p, .right p, .top p, .bottom p {
+		margin-top: 0 ;
+		margin-bottom: 0; 
+	}
+
+	.marquee3k {
+		background-color: #fff;
+	}	
+
+	.bar-top {
+		position: absolute;
+		top:0;
+		height: 25px;
+	    width: 100%;
+	    z-index: 9;
+		background-color: #fff;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="bar-top"></div>
+	<div class="marquee3k absolute top" 
+        data-speed="50" → speed in pixels/sec (default: 50)
+        data-reverse="bool" → default: R to L / T to B
+        data-vertical="bool" → [def] horizontal or [true] vertical
+        data-delay="0" → Initial pause before animating (in sec)
+        data-pausable="bool" → Pause marquee on hover
+        data-hover="bool" → Play marquee on hover
+        data-callback="lolol" → function called every cycle>
+        <p>FLOATING HIGH CONFETTI 2007 PHOENIX</p>
+    </div>
+
+    <div class="marquee3k absolute bottom" 
+        data-speed="20" → speed in pixels/sec (default: 50)
+        data-reverse="true" → default: R to L / T to B
+        data-vertical="bool" → [def] horizontal or [true] vertical
+        data-delay="0" → Initial pause before animating (in sec)
+        data-pausable="bool" → Pause marquee on hover
+        data-hover="bool" → Play marquee on hover
+        data-callback="functionName" → function called every cycle>
+        <p>FLOATING HIGH CONFETTI 2007 PHOENIX</p>
+    </div>
+
+    <div class="marquee3k absolute left" 
+        data-speed="15" → speed in pixels/sec (default: 50)
+        data-reverse="bool" → default: R to L / T to B
+        data-vertical="true" → [def] horizontal or [true] vertical
+        data-delay="0" → Initial pause before animating (in sec)
+        data-pausable="bool" → Pause marquee on hover
+        data-hover="bool" → Play marquee on hover
+        data-callback="functionName" → function called every cycle>
+        <p>FLOATING HIGH CONFETTI 2007 PHOENIX</p>
+    </div>
+
+    <div class="marquee3k absolute right" 
+        data-speed="20" → speed in pixels/sec (default: 50)
+        data-reverse="true" → default: R to L / T to B
+        data-vertical="true" → [def] horizontal or [true] vertical
+        data-delay="0" → Initial pause before animating (in sec)
+        data-pausable="bool" → Pause marquee on hover
+        data-hover="bool" → Play marquee on hover
+        data-callback="functionName" → function called every cycle>
+        <p>FLOATING HIGH CONFETTI 2007 PHOENIX</p>
+    </div>
+
+</body>
+<script>
+</script>
+</html>
